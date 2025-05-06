@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class env
----@field mission table see [Miz mission structure](https://wiki.hoggitworld.com/view/Miz_mission_structure)
+---@field mission Mission see [Miz mission structure](https://wiki.hoggitworld.com/view/Miz_mission_structure)
 ---@field warehouse table see [Miz warehouses structure](https://wiki.hoggitworld.com/view/Miz_warehouses_structure)
 env = {}
 
