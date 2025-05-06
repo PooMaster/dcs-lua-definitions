@@ -3,6 +3,12 @@
 ---@class coord
 coord = {}
 
+---@class MGRS
+---@field UTMZone string
+---@field MGRSDigraph string
+---@field Easting number
+---@field Northing number
+
 ---Returns a point from latitude, longitude and altitude (optional) in the vec3 format.
 ---@param latitude number
 ---@param longitude number

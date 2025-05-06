@@ -351,7 +351,7 @@ function trigger.action.setMarkupText(id, text) end
 function trigger.action.setUnitInternalCargo(unitName, mass) end
 
 ---Creates a text imposed on the map at a given point. Text scales with the map.
----@param coalition coalition.side|integer -- Coalition Ids to be used. -1 for All, 0 for Neutral, 1 for Red, 2 for Blue.
+---@param coalition coalition.side|-1 -- Coalition Ids to be used. -1 for All, 0 for Neutral, 1 for Red, 2 for Blue.
 ---@param id integer -- Id MUST be unique and is shared with the ids used with mark panels. Likewise trigger.action.removeMark is used to remove shapes created.
 ---@param point vec3 -- Point MUST be a vec3 table. {x, y z}
 ---@param color table -- Color format is {r, g, b, a} with values 0 to 1. A red line with 50% alpha would be {1, 0, 0, 0.5}. It defines the color of the text to be displayed.
@@ -365,7 +365,7 @@ function trigger.action.textToAll(coalition, id, point, color, fillColor, fontSi
 trigger.misc = {}
 
 ---Returns the value of a user flag.
----@param flagNumOrName string -- The number or name of the user flag.
+---@param flagNumOrName integer|string -- The number or name of the user flag.
 ---@return integer -- The value of the user flag.
 function trigger.misc.getUserFlag(flagNumOrName) end
 

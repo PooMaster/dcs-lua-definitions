@@ -1,6 +1,6 @@
 ---@meta
 
----@class Group
+---@class Group: Object
 ---@field id_ integer
 Group = {}
 
